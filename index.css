@@ -1,0 +1,119 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#button1{
+    padding: 10px;
+    background-color: rgb(7, 121, 252);
+    border-radius: 8px;
+    border-color: rgb(145, 189, 255);
+    border-width: 3px;
+}
+#button1:hover,
+#button1:focus {
+    color: white;
+    background-color: rgb(4, 94, 211);
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modalbody {
+    background-color: #fefefe;
+    margin: auto;
+    /* padding: 20px; */
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 60%;
+}
+.modal1{
+    display: flex; 
+    justify-content: space-between; 
+    background-color: rgb(151, 225, 235);
+    border-bottom: 1px solid rgb(240, 238, 238); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+.modal2{
+    display: flex; 
+    justify-content: flex-end; 
+    border-top: 1px solid rgb(240, 238, 238); 
+    padding: 20px;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close1{
+    background-color: rgb(105, 103, 103);
+    border-radius: 6px;
+    padding: 10px;
+    border-width: 0px;
+    color: white;
+}
+.close1:hover,
+.close1:focus {
+    color: wheat;
+    background-color: rgb(92, 91, 91);
+    text-decoration: none;
+    cursor: pointer;
+}
+.button2{
+    background-color: rgb(72, 145, 241);
+    border-radius: 6px;
+    padding: 10px;
+    border-width: 0px;
+    color: white;
+}
+.button2:hover,
+.button2:focus {
+    color: wheat;
+    background-color: rgb(0, 110, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (max-width:700px){
+    .modal{
+        padding-top: 150px;
+    }
+    .modalbody{
+        font-size: 80%;
+        width: 70%;
+    }
+}
+@media screen and (max-width:450px){
+    button{
+        font-size: 80%;
+        padding: 1px;
+    }
+}
